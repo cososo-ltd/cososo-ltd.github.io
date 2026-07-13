@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cososo — Product Documentation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --accent:#3e2199; --heading:#2d2d2d; --body:#626262; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:"Open Sans",sans-serif; color:var(--body);
+         line-height:1.73; background:#fff; }
+  .wrap { max-width:640px; margin:0 auto; padding:14vh 24px 8vh; }
+  h1 { font-family:"Montserrat",sans-serif; font-weight:600; color:var(--heading);
+       font-size:29px; margin:0 0 .4em; }
+  .lede { font-size:18px; margin:0 0 2.5em; }
+  a { color:var(--accent); }
+  ul.products { list-style:none; margin:0; padding:0; }
+  ul.products li { border:1px solid #ececf0; border-radius:6px; margin-bottom:14px; }
+  ul.products li a { display:block; padding:18px 22px; text-decoration:none; color:var(--heading); }
+  ul.products li a:hover { border-color:var(--accent); }
+  ul.products .name { font-family:"Montserrat",sans-serif; font-weight:600; font-size:20px; }
+  ul.products .desc { color:var(--body); font-size:15px; margin-top:2px; }
+  ul.products li:hover { box-shadow:0 0 0 1px var(--accent) inset; }
+  footer { margin-top:3em; font-size:14px; color:#8a8a92; }
+  footer a { color:#8a8a92; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Product documentation</h1>
+    <p class="lede">Technical documentation for Cososo's software products.</p>
+    <ul class="products">
+      <li>
+        <a href="/solid-syslog/">
+          <span class="name">SolidSyslog</span>
+          <span class="desc">Structured syslog for embedded and industrial systems — RFC&nbsp;5424 audit logging for IEC&nbsp;62443, the EU Cyber Resilience Act and NIS2.</span>
+        </a>
+      </li>
+    </ul>
+    <footer><a href="https://www.cososo.co.uk/">← cososo.co.uk</a></footer>
+  </div>
+</body>
+</html>

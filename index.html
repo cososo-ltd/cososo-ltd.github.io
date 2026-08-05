@@ -7,11 +7,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-<!-- Cookieless analytics; no consent banner needed. data-domain is the root
-     domain, so this page, cososo.co.uk and /solid-syslog/ share one dashboard.
-     The same snippet lives in solid-syslog's overrides/main.html. -->
-<script defer data-domain="cososo.co.uk"
-        src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
+<!-- Cookieless analytics; no consent banner needed. The hashed script filename
+     identifies the site and carries the root domain cososo.co.uk, so this page,
+     the WordPress site and /solid-syslog/ share one dashboard, split by hostname.
+     The same snippet lives in solid-syslog's overrides/main.html. The inline stub
+     must stay: the tracker is deferred, so it runs after this block and picks up
+     the options from plausible.o. -->
+<script defer src="https://plausible.io/js/pa-rbQGvMhd4GxKexbnXvDJE.js"></script>
+<script>
+window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+plausible.init();
+</script>
 <style>
   :root { --accent:#3e2199; --heading:#2d2d2d; --body:#626262; }
   * { box-sizing: border-box; }

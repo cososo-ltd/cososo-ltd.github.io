@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Just the landing page. The 456 URLs under /solid-syslog/ are covered by that
+  repo's own MkDocs-generated sitemap, advertised alongside this one in robots.txt.
+  No <lastmod>: it would have to be hand-maintained here and would quietly go stale,
+  which is worse than omitting it.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://docs.cososo.co.uk/</loc>
+  </url>
+</urlset>

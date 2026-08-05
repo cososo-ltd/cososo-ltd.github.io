@@ -1,0 +1,9 @@
+# Served at the root of docs.cososo.co.uk, so this file governs the whole domain —
+# including /solid-syslog/, which is deployed from a different repo. Nothing is
+# disallowed; this exists to advertise both sitemaps, since the two docs sites are
+# separate GitHub Pages deployments and neither can list the other's URLs.
+User-agent: *
+Allow: /
+
+Sitemap: https://docs.cososo.co.uk/sitemap.xml
+Sitemap: https://docs.cososo.co.uk/solid-syslog/sitemap.xml
